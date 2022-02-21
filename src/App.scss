@@ -1,0 +1,98 @@
+// Russo One font
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+// Variables
+$green: #1e555c;
+$darkGreen: #13353a;
+$white: #ffffff;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+  color: $white;
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+p,
+span {
+  font-size: 1.2rem;
+}
+
+body {
+  background-color: $green;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  color: $white;
+  font-family: 'Russo One', sans-serif;
+}
+
+.clock {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  text-align: center;
+
+
+  .break-session-container {
+    display: flex;
+    gap: 2em;
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .increment-decrement-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: .5em;
+
+        svg {
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  .timer {
+    border: 8px solid $darkGreen;
+    border-radius: 2em;
+    padding: 1em 2em;
+    margin: auto;
+
+    #time-left {
+      font-size: 5rem;
+    }
+  }
+
+  .controls {
+    display: flex;
+    justify-content: center;
+    gap: .25em;
+
+    svg {
+      height: 100%;
+    }
+
+    #start_stop {
+      justify-self: end;
+    }
+
+    #reset {
+      justify-self: start;
+    }
+  }
+}
