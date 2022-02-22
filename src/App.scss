@@ -1,10 +1,11 @@
-// Russo One font
-@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+// Russo One font and Azeret Mono
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@700&family=Russo+One&display=swap');
 
 // Variables
 $green: #1e555c;
 $darkGreen: #13353a;
 $white: #ffffff;
+$pink: #c96859;
 
 * {
   padding: 0;
@@ -73,7 +74,12 @@ body {
     padding: 1em 2em;
     margin: auto;
 
+    &.active {
+      color: $pink;
+    }
+
     #time-left {
+      font-family: 'Azeret Mono', sans-serif;
       font-size: 5rem;
     }
   }
